@@ -17,6 +17,9 @@
 13. `docker run ubuntu sleep 20` // run contaier and sleeps for 20 seconds
 14. `docker exec <container_id> cat /etc/*release*` // runs cat command into the container.
 15. `docker run -p 82:5000 kodekloud/webapp` // maps port 82 of local machine to 5000 of container
+16. `docker run -v /opt/datadir:/var/lib/mysql mysql` // attaches volume /opt/datadir of local machine to /var/lib/mysql of container
+17. `docker inspect <container_id or container_name>` // to see details of container
+18. `docker logs -f <container_id or container_name>` // to see logs of the container
 
 
 
