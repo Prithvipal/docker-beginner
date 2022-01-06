@@ -9,4 +9,8 @@
 5. `docker ps` // lists all the containers
 6. `docker ps -a` // lists all the containers including exited ones.
 7. `docker rm <container_id>` // to remove container. It will only remove exited container.
-8. `docker stop <container_id or contaniner_name>`
+8. `docker stop <container_id or contaniner_name>` // stops container running container
+9. `docker start <container_id or contaniner_name>` // start container stoped container
+10. `docker images` or `docker image ls` // lists all the images
+11. `docker rmi ubuntu` or `docker image rm ubuntu` // removes image. It only remove image if it is not used in any container including exited onces.
+
