@@ -13,4 +13,10 @@
 9. `docker start <container_id or contaniner_name>` // start container stoped container
 10. `docker images` or `docker image ls` // lists all the images
 11. `docker rmi ubuntu` or `docker image rm ubuntu` // removes image. It only remove image if it is not used in any container including exited onces.
+12. `docker pull` //pull image without running the container.
+13. `docker run ubuntu sleep 20` // run contaier and sleeps for 20 seconds
+14. `docker exec <container_id> cat /etc/*release*` // runs cat command into the container.
+15. `docker run -p 82:5000 kodekloud/webapp` // maps port 82 of local machine to 5000 of container
+
+
 
