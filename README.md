@@ -25,6 +25,8 @@
 21. `docker volume ls` // lists all the volumes
 22. `docker run -v /data/mysql:/var/lib/mysql mysql` // mount to given local storage instead of default volume path. It is called bind mount.
 23. `docker run --mount type=bind,source=/data/mysql,target=/var/lib/mysql mysql` // a new way to mount the volume.
-
+24. `docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh` // exec into docker host and you can see all docker directories in /var/lib/docker
+25. `docker systen df` // to check space consumed by docker resources. i.e container, images etc.
+26. `docker system df -v ` // to check space consumed by docker resources. i.e container, images etc. it shows in details of each type.
 
 
