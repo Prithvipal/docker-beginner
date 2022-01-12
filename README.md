@@ -20,6 +20,11 @@
 16. `docker run -v /opt/datadir:/var/lib/mysql mysql` // attaches volume /opt/datadir of local machine to /var/lib/mysql of container
 17. `docker inspect <container_id or container_name>` // to see details of container
 18. `docker logs -f <container_id or container_name>` // to see logs of the container
+19. `docker create volume data_vol` // creates a new volume. It is called volume mount.
+20. `docker run -v data_vol:/var/lib/mysql mysql` // creates new container from mysql image and attach newly created volume. Plesae note that if volume specified in this command is not create in advance, the run command will create a new volume and attach it to the container.
+21. `docker volume ls` // lists all the volumes
+22. `docker run -v /data/mysql:/var/lib/mysql mysql` // mount to given local storage instead of default volume path. It is called bind mount.
+23. `docker run --mount type=bind,source=/data/mysql,target=/var/lib/mysql mysql` // a new way to mount the volume.
 
 
 
